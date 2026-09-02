@@ -1,0 +1,27 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div style="margin: 150px auto; width: 50%">
+    <h2 class="mb-4">Word to PDF Converter</h2>
+    @using (Html.BeginForm("ConvertWordtoPDF", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
+
+    {
+        <div>
+
+            @if (ViewBag.Message != null)
+
+            {
+                <p style="color:red;">@ViewBag.Message</p>
+
+            }
+        </div>
+        <div class="mb-3">
+            <label for="uploadFiles" class="form-label">Select a Word document (.doc, .docx)</label>
+            <input type="file" name="file" accept=".doc,.docx" class="form-control" required />
+        </div>
+        <div>
+            <input type="submit" value="Convert Word Document to PDF" class="btn btn-primary" />
+        </div>
+    }
+</div>
