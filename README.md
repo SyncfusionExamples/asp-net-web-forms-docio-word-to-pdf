@@ -24,7 +24,7 @@ A minimal **ASP.NET Web Forms (C#, .NET Framework 4.8)** application that lets a
 5. In the Main page, choose a `.doc` or `.docx` file, click **Convert Word to PDF**, and the PDF is offered as a download.
 
 
->This ASP.NET Web Form platform is Deprecated, you can use the same product from ASP.NET MVC platform.
+>`⚠️This ASP.NET Web Form platform is Deprecated, you can use the same product from ASP.NET MVC platform.`
 
 # Word to PDF — ASP.NET MVC Sample 
 
